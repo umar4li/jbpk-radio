@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="1100" height="360">
+  <defs>
+    <!-- Multi-layer drop shadow and neon glow -->
+    <filter id="fancy-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="18" flood-color="#000000" flood-opacity="0.95"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="24" flood-color="#38bdf8" flood-opacity="0.35"/>
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#ffffff" flood-opacity="0.8"/>
+    </filter>
+    
+    <filter id="gold-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000000" flood-opacity="0.8"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#fbbf24" flood-opacity="0.4"/>
+    </filter>
+
+    <!-- Luxury Chrome-Silver Metallic Gradient -->
+    <linearGradient id="chrome-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#f8fafc" />
+      <stop offset="50%" stop-color="#e2e8f0" />
+      <stop offset="75%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+
+    <!-- Champagne Gold Gradient -->
+    <linearGradient id="champagne-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <!-- Emerald Radio Pulse Gradient -->
+    <linearGradient id="emerald-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&amp;family=Syne:wght@800;900&amp;family=Montserrat:wght@500;600;700;800&amp;display=swap');
+
+    .title-jb {
+      font-family: 'Cinzel Decorative', 'Cinzel', 'Playfair Display', serif;
+      font-size: 88px;
+      font-weight: 900;
+      fill: url(#champagne-grad);
+      filter: url(#gold-glow);
+      letter-spacing: 6px;
+    }
+
+    .title-kp {
+      font-family: 'Syne', 'Montserrat', sans-serif;
+      font-size: 68px;
+      font-weight: 900;
+      fill: url(#chrome-grad);
+      filter: url(#fancy-glow);
+      letter-spacing: 8px;
+      text-transform: uppercase;
+    }
+
+    .sub-caps {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      fill: #ffffff;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+    }
+
+    .sub-loc {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      fill: #94a3b8;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+    }
+  </style>
+
+  <!-- Ambient Decorative Acoustic Radio Waves -->
+  <g transform="translate(550, 48)" opacity="0.85">
+    <path d="M-220 0 L-60 0 M60 0 L220 0" stroke="url(#chrome-grad)" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+    <!-- Radio center antenna jewel -->
+    <circle cx="0" cy="0" r="5" fill="#34d399" filter="url(#gold-glow)" />
+    <!-- Radio signal arcs -->
+    <path d="M-18 -12 C-8 -22 8 -22 18 -12" fill="none" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round" opacity="0.9" />
+    <path d="M-30 -20 C-14 -35 14 -35 30 -20" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+    
+    <!-- Diamonds on sides -->
+    <polygon points="-140,0 -145,-5 -150,0 -145,5" fill="#fbbf24" />
+    <polygon points="140,0 145,-5 150,0 145,5" fill="#fbbf24" />
+    <text x="-75" y="4" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" fill="#fbbf24" letter-spacing="3" text-anchor="middle">✦ ESTD ✦</text>
+    <text x="75" y="4" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" fill="#fbbf24" letter-spacing="3" text-anchor="middle">✦ 2008 ✦</text>
+  </g>
+
+  <!-- Main Fancy Typography: "JB KNOWLEDGE PARK" -->
+  <g transform="translate(550, 155)" text-anchor="middle">
+    <!-- Drop Shadow Under-Layer for Ultra-Contrast -->
+    <text x="0" y="0">
+      <tspan class="title-jb" dx="-10">JB</tspan>
+      <tspan class="title-kp" dx="20">KNOWLEDGE PARK</tspan>
+    </text>
+  </g>
+
+  <!-- Luxury Frosted Badge: "CAMPUS RADIO • 24/7 ON AIR" -->
+  <g transform="translate(550, 222)">
+    <rect x="-190" y="-18" width="380" height="38" rx="19" 
+          fill="rgba(10, 10, 10, 0.65)" stroke="rgba(255, 255, 255, 0.25)" stroke-width="1.2" />
+    <!-- Live pulsing dot -->
+    <circle cx="-150" cy="1" r="4.5" fill="#10b981" />
+    <text x="12" y="6" class="sub-caps" text-anchor="middle">CAMPUS RADIO</text>
+    <circle cx="150" cy="1" r="3" fill="#fbbf24" opacity="0.8" />
+  </g>
+
+  <!-- Tagline / Location Accent -->
+  <text x="550" y="285" class="sub-loc" text-anchor="middle">FARIDABAD • DELHI NCR • STREAMING LIVE</text>
+
+  <!-- Decorative Corner Sparkles -->
+  <g transform="translate(80, 145)" opacity="0.6">
+    <path d="M0 -14 L3 -4 L13 0 L3 4 L0 14 L-3 4 L-13 0 L-3 -4 Z" fill="#fbbf24" />
+  </g>
+  <g transform="translate(1020, 145)" opacity="0.6">
+    <path d="M0 -14 L3 -4 L13 0 L3 4 L0 14 L-3 4 L-13 0 L-3 -4 Z" fill="#fbbf24" />
+  </g>
+</svg>
